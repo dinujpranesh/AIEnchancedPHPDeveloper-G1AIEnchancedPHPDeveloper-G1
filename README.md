@@ -1,5 +1,5 @@
 # AIEnchancedPHPDeveloper-G1AIEnchancedPHPDeveloper-G1
 AIEnchancedPHPDeveloper-G1AIEnchancedPHPDeveloper-G1
 
-This is a new course
+This is the main code repository for our project
  
