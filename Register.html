@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" lang="en" data-bs-theme="white">
+<html lang="en" lang="en" data-bs-theme="theme-switch">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +10,70 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
     <link rel="manifest" href="img/fav/site.webmanifest">
+    <style>
+      body{
+        background: linear-gradient(to right , #ffffff, #ffffff,#ffffff);
+        justify-content: center; color: white;
+        align-items: center;}
+          
+      .container-md{
+        width: 700px;
+        background:linear-gradient(135deg , rgba(255, 255, 255, 0.727), rgba(255, 255, 255, 0.727));
+        border: none;
+       -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 0 10px rgba(34, 33, 33, 0.577);
+        color: rgb(0, 0, 0);
+        height: 750px;
+        border-radius: 20px;
+         }
+      #button{
+        padding: 6px 50px;
+        border-radius: 20px;
+         color:rgba(8, 8, 8, 0.9);
+        box-shadow: 0 0 10px rgb( 0 0 0 .1); 
+        background-image: url(images/buttonBG.png); 
+        background-size: cover;
+        outline: none;
+        font-weight: bolder;
+        background-position: center;
+        cursor: pointer; 
+        border: none;
+      }
+        
+      .container-md .mb-1{
+        position: relative;
+        margin: 30px;
+      }
+     
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .container-md h2{
+      font-weight: lighter;
+      }  
+      input::placeholder{
+        color: white;
+      }
+      
+      .mb-1 span{
+        position: absolute;
+        left:25px;
+        top: 49%;
+        transform: translateY(-50%);
+      }
+      .mb-1 input{
+        border-radius: 20px;
+        border-color: rgba(228, 19, 155, 0.863);
+        background: transparent;
+        color: rgb(255, 252, 252);  
+        border: 2px solid rgb( 255 255 255 .2);
+        border-radius: 40px; width: 350px ; height: 33px ;
+      }
+    </style>
   </head>
   <body>
 
@@ -39,9 +103,9 @@
         </div>
       </nav>
       <form>
-        <div class="container-md text-center"  style="max-width: 400px;">
-          <h2 class="mb-4 fw-light text-success-emphasis ">Let's begin the journey!</h2>
-          <div class="mb-3">
+        <div class="card container-md text-center"  style="max-width: 400px;">
+          <h2 class="mt-4 mb-4 fw-light text-success-emphasis ">Let's begin the journey!</h2>
+          <div class="mt-3 mb-3">
             <input type="email" class="p-1 text-success-emphasis --bs-success-border-subtle border border-success-subtle rounded-3 form-control form-control-lg text-center fw-medium" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address">
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
@@ -87,6 +151,7 @@
                 <button type="submit" class="btn btn-outline-success">Register</button>
               </form>
             </div>
+          </div>
 
             <div>
               
