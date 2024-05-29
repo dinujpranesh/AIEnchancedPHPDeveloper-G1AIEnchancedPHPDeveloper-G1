@@ -45,14 +45,92 @@
         flex: 6;
       }
 
-        
-    .jumbotron {
+      .hero-text {
       background-color: #f8f9fa;
-      color: #343a40;
-      font-size: 2rem;
-      font-weight: bold;
+      padding: 10px;
       text-align: center;
+      margin-top: 10vh;
+      margin-bottom: 2vb;
     }
+
+    
+
+    .card {
+      position: relative;
+      width: 400px;
+      height: 300px;
+      background-color: #f2f2f2;
+      border-radius: 20px;
+      flex: 1;
+      margin: 10px;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 1000px;
+      box-shadow: 0 0 0 5px #ffffff80;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);  
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    .card svg {
+      width: 60px;
+      fill: #333;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+
+    .card__content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+      background-color: #f2f2f2;
+      transform: rotateX(-90deg);
+      transform-origin: bottom;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .card:hover .card__content {
+      transform: rotateX(0deg);
+    }
+
+    .card__title {
+      margin: 0;
+      font-size: 24px;
+      color: #333;
+      font-weight: 700;
+    }
+
+    .card:hover svg {
+      scale: 0;
+    }
+
+    .card__description {
+      margin: 10px 0 0;
+      font-size: 14px;
+      color: #777;
+      line-height: 1.4;
+    }
+
+    .form-control {
+            border: #333 solid 1px;
+            border-radius: 20px;
+        }
+
     
 
 
@@ -87,8 +165,8 @@
       </nav>
 
       <div class="container">
-        <div class="jumbotron">
-          <h1 class="display-4">One Stop Employee Cloud</h1>
+        <div class="hero-text">
+          <h1 class="display-3">One Stop Employee Cloud</h1>
         </div>
           
 
@@ -97,6 +175,59 @@
         <div></div>
         <div></div>
       </div>
+
+      <div class="container">
+        <div class="hero-text">       
+          <h1 class="mb-1">Our Services</h1>
+        </div>        
+        
+    <div class="card-container">
+      <div class="card">
+        <img src="img/card/Employee Self-Service Portal.png" alt="...">  <div class="card__content"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+        <div class="card__content">
+          <p class="card__title">Employee Self-Service Portal</p>
+          <p class="card__description">Create a secure login area where employees can access their personal information, such as pay stubs, tax forms, and benefits details</p>
+          <p class="card__description">Allow employees to update their contact information, emergency contacts, and direct deposit preferences.</p>
+          <p class="card__description">Provide a document repository for company policies, employee handbooks, and other relevant materials.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/card/011.png" alt="...">  <div class="card__content"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+        <div class="card__content">
+          <p class="card__title">Task Management and Collaboration Tools</p>
+          <p class="card__description">Implement a task management system where employees can create, assign, and track tasks or projects.</p>
+          <p class="card__description">Include features for team collaboration, such as shared calendars, project boards, and chat functionality.</p>
+          <p class="card__description">Enable file sharing and version control for collaborative work on documents and presentations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card">
+        <img src="img/card/1.png" alt="...">  <div class="card__content"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+        <div class="card__content">
+          <p class="card__title">Wellness and Employee Assistance Programs</p>
+          <p class="card__description">Offer resources related to employee well-being, such as fitness challenges, mental health tips, and stress management techniques.</p>
+          <p class="card__description">Provide access to an employee assistance program (EAP) with counseling services, legal advice, and financial planning resources.</p>
+          <p class="card__description">Promote wellness initiatives like health screenings, fitness classes, and mindfulness workshops.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="img/card/2.png" alt="...">  <div class="card__content"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path></svg>
+        <div class="card__content">
+          <p class="card__title">Employee Recognition and Rewards</p>
+          <p class="card__description">Create a platform where employees can recognize and appreciate their colleagues for outstanding work.</p>
+          <p class="card__description">Implement a system for managers to give kudos, awards, or virtual badges to employees who demonstrate exceptional performance.</p>
+          <p class="card__description">Showcase employee achievements, work anniversaries, and milestones to foster a positive work environment.</p>
+        </div>
+      </div>
+      
         
     
       
